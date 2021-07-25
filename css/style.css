@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 /* Main styles */
 
@@ -25,6 +25,16 @@ ul {
 	list-style-type: none;
 }
 
+select {
+	font: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	border-radius: 4px;
+	padding: 3px 25px 4px 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+ }
 /* Left navigation */
 
 .left-navigation ul {
@@ -71,10 +81,12 @@ ul {
 
 .main__item {
 	display: flex;
+	align-items: center;
 	margin: 20px 20px;
 	background-color: #fff;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
+	font-size: 14px;
 }
 
 .main__item:hover {
@@ -83,8 +95,9 @@ ul {
 
 .main__item div{
 	position: relative;
-	padding: 20px 20px;
+	padding: 20px 16px;
 }
+
 .main__item div:nth-of-type(n+2)::after{
 	position: absolute;
    top: 20%;
@@ -92,4 +105,26 @@ ul {
    height: 60%;
    border-right: 1px solid #ebebeb;
    content: "";
+}
+
+.main__item div a{
+	text-decoration: none;
+	color: #03a1eb;
+}
+
+.inv-new{
+	color: #000000;
+	font-weight: bold;
+}
+
+.inv-paid {
+	color: #059123;
+}
+.inv-paid select {
+	background-color: #059123;
+	color: #fff;
+
+}
+.inv-checked {
+	color: #03a1eb;
 }
