@@ -14,9 +14,9 @@
 	<header>
 		<nav class="main-navigation">
 			<ul>
-				<li><a href="">Главная</a></li>
-				<li><a href="">Счета</a></li>
-				<li><a href="">Задачи</a></li>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="index.html">Входящие счета</a></li>
+				<li><a href="index.html">Постановка задач</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -24,96 +24,108 @@
 		<aside>
 			<nav class="left-navigation">
 				<ul>
-					<li><a href="">ООО "КОУМ"</a></li>
-					<li><a href=""><i class="fa fa-rub" aria-hidden="true"></i> Банковские счета</a></li>
-					<li><a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> Счета полученные</a></li>
-					<li><a href=""><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Ведомость на зарплату</a></li>
-					<li><a href=""><i class="fa fa-user-circle-o" aria-hidden="true"></i> Пользователи</a></li>
-					<li><a href=""><i class="fa fa-sliders" aria-hidden="true"></i> Настройки</a></li>
+					<li><a href="index.html">ООО "КОУМ"</a></li>
+					<li><a href="index.html"><i class="fa fa-rub" aria-hidden="true"></i> Банковские счета</a></li>
+					<li><a href="/pages/add_invoice.html"><i class="fa fa-check-square-o" aria-hidden="true"></i> Счета
+							полученные</a></li>
+					<li><a href="index.html"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Ведомость на
+							зарплату</a></li>
+					<li><a href="index.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Пользователи</a></li>
+					<li><a href="index.html"><i class="fa fa-sliders" aria-hidden="true"></i> Настройки</a></li>
 				</ul>
 			</nav>
 
 		</aside>
 		<div class="main__main-area">
-			<div class="main__item inv-checked">
-				<div class="checkbox"><input type="checkbox"></div>
-				<div class="number"><a href="">23235</a></div>
-				<div class="date-invoice">01-02-2021</div>
-				<div class="conterproty">ООО БУМАНС</div>
-				<div class="sum">12600.00</div>
-				<div class="date-pay">05-03-2021</div>
-				<div class="status">
-					<select name="status" id="status-1">
-						<option value="new">Новый</option>
-						<option value="checked" selected>Проверен</option>
-						<option value="paid">Оплачен</option>
-					</select>
+			<div class="main__item">
+				<div class="main__invoce">
+					<div class="checkbox"><input type="checkbox"></div>
+					<div class="number"><a href="/pages/invoice.html">23235</a></div>
+					<div class="date-invoice">01-02-2021</div>
+					<div class="conterproty">ООО БУМАНС</div>
+					<div class="sum">12 600.00</div>
+					<div class="date-pay">05-03-2021</div>
+					<div class="status">
+						<select name="status" id="status-1">
+							<option value="new">Новый</option>
+							<option value="checked" selected>Проверен</option>
+							<option value="paid">Оплачен</option>
+						</select>
+					</div>
+					<div class="send"><button>Оплатить</button></div>
 				</div>
-				<div class="send"><button>Оплатить</button></div>
 			</div>
 			<div class="main__item inv-new">
-				<div class="checkbox"><input type="checkbox"></div>
-				<div class="number"><a href="">23235</a></div>
-				<div class="date-invoice">01-02-2021</div>
-				<div class="conterproty">ООО БУМАНС</div>
-				<div class="sum">12600.00</div>
-				<div class="date-pay">05-03-2021</div>
-				<div class="status">
-					<select name="status" id="status-2">
-						<option value="new" selected>Новый</option>
-						<option value="checked">Проверен</option>
-						<option value="paid">Оплачен</option>
-					</select>
+				<div class="main__invoce">
+					<div class="checkbox"><input type="checkbox"></div>
+					<div class="number"><a href="/pages/invoice.html">23235</a></div>
+					<div class="date-invoice">01-02-2021</div>
+					<div class="conterproty">ООО БУМАНС</div>
+					<div class="sum">12 600.00</div>
+					<div class="date-pay">05-03-2021</div>
+					<div class="status">
+						<select name="status" id="status-2">
+							<option value="new" selected>Новый</option>
+							<option value="checked">Проверен</option>
+							<option value="paid">Оплачен</option>
+						</select>
+					</div>
+					<div class="send"><button disabled>Оплатить</button></div>
 				</div>
-				<div class="send"><button disabled>Оплатить</button></div>
 			</div>
-			<div class="main__item inv-paid">
-				<div class="checkbox"><input type="checkbox"></div>
-				<div class="number"><a href="">23235</a></div>
-				<div class="date-invoice">01-02-2021</div>
-				<div class="conterproty">ООО БУМАНС</div>
-				<div class="sum">12600.00</div>
-				<div class="date-pay">05-03-2021</div>
-				<div class="status">
-					<select name="status" id="status-3">
-						<option value="new">Новый</option>
-						<option value="checked">Проверен</option>
-						<option value="paid" selected>Оплачен</option>
-					</select>
+			<div class="main__item">
+				<div class="main__invoce">
+					<div class="checkbox"><input type="checkbox"></div>
+					<div class="number"><a href="/pages/invoice.html">23235</a></div>
+					<div class="date-invoice">01-02-2021</div>
+					<div class="conterproty">ООО БУМАНС</div>
+					<div class="sum">12 600.00</div>
+					<div class="date-pay">05-03-2021</div>
+					<div class="status">
+						<select name="status" id="status-3">
+							<option value="new">Новый</option>
+							<option value="checked">Проверен</option>
+							<option value="paid" selected>Оплачен</option>
+						</select>
+					</div>
+					<div class="send"><button disabled>Оплатить</button></div>
 				</div>
-				<div class="send"><button disabled>Оплатить</button></div>
-			</div>
-			<div class="main__item inv-new">
-				<div class="checkbox"><input type="checkbox"></div>
-				<div class="number"><a href="">23235</a></div>
-				<div class="date-invoice">01-02-2021</div>
-				<div class="conterproty">ООО БУМАНС</div>
-				<div class="sum">12600.00</div>
-				<div class="date-pay">05-03-2021</div>
-				<div class="status">
-					<select name="status" id="status-2">
-						<option value="new" selected>Новый</option>
-						<option value="checked">Проверен</option>
-						<option value="paid">Оплачен</option>
-					</select>
-				</div>
-				<div class="send"><button disabled>Оплатить</button></div>
 			</div>
 			<div class="main__item inv-new">
-				<div class="checkbox"><input type="checkbox"></div>
-				<div class="number"><a href="">23235</a></div>
-				<div class="date-invoice">01-02-2021</div>
-				<div class="conterproty">ООО БУМАНС</div>
-				<div class="sum">12600.00</div>
-				<div class="date-pay">05-03-2021</div>
-				<div class="status">
-					<select name="status" id="status-2">
-						<option value="new" selected>Новый</option>
-						<option value="checked">Проверен</option>
-						<option value="paid">Оплачен</option>
-					</select>
+				<div class="main__invoce">
+					<div class="checkbox"><input type="checkbox"></div>
+					<div class="number"><a href="/pages/invoice.html">23235</a></div>
+					<div class="date-invoice">01-02-2021</div>
+					<div class="conterproty">ООО БУМАНС</div>
+					<div class="sum">12 600.00</div>
+					<div class="date-pay">05-03-2021</div>
+					<div class="status">
+						<select name="status" id="status-2">
+							<option value="new" selected>Новый</option>
+							<option value="checked">Проверен</option>
+							<option value="paid">Оплачен</option>
+						</select>
+					</div>
+					<div class="send"><button disabled>Оплатить</button></div>
 				</div>
-				<div class="send"><button disabled>Оплатить</button></div>
+			</div>
+			<div class="main__item inv-new">
+				<div class="main__invoce">
+					<div class="checkbox"><input type="checkbox"></div>
+					<div class="number"><a href="/pages/invoice.html">23235</a></div>
+					<div class="date-invoice">01-02-2021</div>
+					<div class="conterproty">ООО БУМАНС</div>
+					<div class="sum">12 600.00</div>
+					<div class="date-pay">05-03-2021</div>
+					<div class="status">
+						<select name="status" id="status-2">
+							<option value="new" selected>Новый</option>
+							<option value="checked">Проверен</option>
+							<option value="paid">Оплачен</option>
+						</select>
+					</div>
+					<div class="send"><button disabled>Оплатить</button></div>
+				</div>
 			</div>
 
 		</div>

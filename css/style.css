@@ -14,7 +14,7 @@ header {
 }
 
 aside {
-	width: 24vw;
+	width: 20vw;
 	background-color: #fff;
 	border-right:1px solid #ebebeb;
 }
@@ -35,7 +35,39 @@ select {
 	-moz-appearance: none;
 	appearance: none;
  }
-/* Left navigation */
+
+/* HEADER */
+
+.main-navigation ul {
+	display: flex;
+	margin-left: 20vw;
+}
+
+.main-navigation ul li {
+	display: block;
+	padding: 2px 20px;
+}
+
+.main-navigation li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 18px 10px;
+	border-bottom: 2px solid rgb(8, 201, 50);
+}
+
+.main-navigation li:hover {
+	background-color: rgba(256, 256, 256, 0.1);
+	padding: 2px 0px;
+	transition: 0.3s;
+}
+
+.main-navigation li:hover a {
+	padding: 18px 30px;
+	transition: 0.3s;
+}
+
+/* ASIDE */
 
 .left-navigation ul {
 	display: flex;
@@ -54,51 +86,58 @@ select {
    content: "";
 }
 
-.left-navigation ul li a{
+.left-navigation ul li a {
+	margin-left: 2px;
 	display: block;
 	padding: 18px 40px;
 	text-decoration: none;
 	color: #022b35;
+	font-size: 14px;
+	border-left: 3px solid #fff;
 }
 
-.left-navigation ul li a:hover{
-	margin-left: 2px;
-	padding-left: 35px;
+.left-navigation ul li a:hover {
 	background-color: #f6f8fa;
-	border-left: 3px solid #3eafe4;
-	color: #3eafe4;
+	border-left: 3px solid #0369ad;
+	color: #0176c4;
+	transition: 0.3s;
 }
 
-/* Main section */
+/* MAIN */
 
 .main {
 	display: flex;
 }
 
 .main__main-area {
-	width: 76vw;
+	width: 80vw;
 }
 
 .main__item {
 	display: flex;
-	align-items: center;
 	margin: 20px 20px;
 	background-color: #fff;
 	border: 1px solid #ebebeb;
 	border-radius: 4px;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .main__item:hover {
 	border: 1px solid #7cc3e4;
+	transition: 0.3s;
 }
 
-.main__item div{
+.main__invoce {
+	display: flex;
+	align-items: center;
+}
+
+.main__item .main__invoce div{
 	position: relative;
 	padding: 20px 16px;
 }
 
-.main__item div:nth-of-type(n+2)::after{
+.main__item .main__invoce div:nth-of-type(n+2)::after {
 	position: absolute;
    top: 20%;
 	left: 0;
@@ -107,24 +146,108 @@ select {
    content: "";
 }
 
-.main__item div a{
+.main__item .main__invoce a {
 	text-decoration: none;
-	color: #03a1eb;
+	color: #015b97;
 }
 
-.inv-new{
-	color: #000000;
-	font-weight: bold;
+.inv-new {
+	font-weight: 700;
 }
 
-.inv-paid {
-	color: #059123;
+/* Invoce*/
+
+.main__left, .main__right {
+	padding: 20px;
 }
-.inv-paid select {
-	background-color: #059123;
+
+.main__left {
+	width: 72%;
+	height: 46vw;
+	border-right: 1px solid #ebebeb;
+}
+
+.main__right {
+	display: flex;
+	flex-direction: column;
+	width: 26%;
+}
+
+.main__left .add-invoce {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	padding: 20px;
+	margin: 200px auto;
+	width: 30%;
+}
+
+.main__left .add-invoce:hover {
+	border: 1px solid #7cc3e4;
+	transition: 0.3s;
+}
+
+.main__left .add-invoce p:nth-of-type(1){
+	margin: 0 0 10px 0;
+	font-size: 16px;
+}
+
+.main__left .add-invoce p:nth-of-type(2){
+	margin: 0 0 10px 0;
+	font-size: 12px;
+}
+
+.main__left .add-invoce button{
+	font-size: 14px;
+	padding: 8px 12px;
+	background-color: #fff;
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+}
+.main__left .add-invoce button:hover{
+	background-color: rgb(241, 241, 241);
+	border: 1px solid #9c9c9c;
+	transition: 0.2s;
+}
+
+.main__right .inv-form-input {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.main__right .inv-form-input label{
+	display: block;
+}
+
+.main__right .inv-form-input:last-of-type {
+	flex-direction: row;
+	justify-content: center;
+}
+
+.main__right .inv-form-input button{
+	margin: 0 10px;
+	padding: 8px 12px;
+	background-color: #015b97;
 	color: #fff;
+	border: 1px solid #02375a;
+	border-radius: 3px;
+	font-size: 14px;
+}
 
+.main__right .inv-form-input button:first-of-type{
+	background-color: rgb(2, 172, 59);
+	border: 1px solid rgb(0, 126, 42);
 }
-.inv-checked {
-	color: #03a1eb;
+
+.main__right .inv-form-input button:hover{
+	background-color: #0087e0;
 }
+.main__right .inv-form-input button:first-of-type:hover{
+	background-color: rgb(1, 214, 72);
+}
+

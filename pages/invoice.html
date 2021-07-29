@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<title>Finvoice</title>
+</head>
+
+<body>
+	<header>
+		<nav class="main-navigation">
+			<ul>
+				<li><a href="../index.html">Главная</a></li>
+				<li><a href="../index.html">Входящие счета</a></li>
+				<li><a href="../index.html">Постановка задач</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="main">
+		<aside>
+			<nav class="left-navigation">
+				<ul>
+					<li><a href="../index.html">ООО "КОУМ"</a></li>
+					<li><a href="../index.html"><i class="fa fa-rub" aria-hidden="true"></i> Банковские счета</a></li>
+					<li><a href=""><i class="fa fa-check-square-o" aria-hidden="true"></i> Счета полученные</a></li>
+					<li><a href="../index.html"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Ведомость на
+							зарплату</a></li>
+					<li><a href="../index.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Пользователи</a></li>
+					<li><a href="../index.html"><i class="fa fa-sliders" aria-hidden="true"></i> Настройки</a></li>
+				</ul>
+			</nav>
+
+		</aside>
+		<div class="main__main-area">
+			<div class="main__item">
+				<div class="main__left"><embed src="../invoses/13302.pdf" width="100%" height="100%" /></div>
+				<div class="main__right">
+					<div class="inv-form-input">
+						<label for="inv-number">Номер счета:</label>
+						<input type="text" id="inv-number">
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-date">Дата счета:</label>
+						<input type="date" id="inv-date">
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-date-pay">Дата оплаты:</label>
+						<input type="date" id="inv-date-pay">
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-supplier">Поставщик:</label>
+						<select name="suppler" id="suppler">
+							<option value="none" selected></option>
+							<option value="tranzit-auto">Транзит-Авто</option>
+							<option value="Stt">Севертранс ТЭК</option>
+						</select>
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-sum">Сумма:</label>
+						<input type="text" id="inv-sum">
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-sum">НДС:</label>
+						<select name="nds" id="nds">
+							<option value="nds-none">Без НДС</option>
+							<option value="nds-20">В т.ч. НДС 20% - 20 000.00</option>
+						</select>
+					</div>
+					<div class="inv-form-input">
+						<label for="inv-sum">Назначение:</label>
+						<textarea rows="6"></textarea>
+					</div>
+					<div class="inv-form-input">
+						<button>Сохранить</button>
+						<button>Отменить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+
+	</footer>
+</body>
+
+</html>
